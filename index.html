@@ -1,0 +1,613 @@
+<html>
+<head>
+<title>Linux Ubuntu Server</title>
+<body>
+<h1><p align="center"><font color="#FF0000">"Linux&nbsp &nbspUbuntu&nbsp &nbspServer"</font></p><h1>
+<h2><p>1. Describir elementos de la barra de menú en Linux U buntu server</P></h2>
+<ul>
+<li><font color="#000080">Barra de menús</li>
+<ul>
+<li><font color="#000000">La barra de menús esta situada en la parte superiordel escritorio.Esta barra contiene
+el menú principal de la ventana que se encuentra activa,es lo que se llama,Mernú global Ubuntu.
+Ala izquierda dse la barra de menús están los menús de aplicaciones.
+En el menu´global de ubuntu, si las ventanas estan maximizadas,la barra de menús contiene
+menús que permiten ejecutar acciones de una aplicación y también aparecen los botones para cerrar,
+minimizar,maximizar o restaurar la ventana,los menús de las aplicacaiónes están situados a la
+derecha de los botones.
+Una vez que se ha hecho el cambio para mostrar la barra de menús en la barra de titulo de cada ventana,
+tendremos acceso a los menús y también a los botones de cerrar,minimizar,maximizar o restaurar,en la 
+ventana en la que estemos o ventana activa</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="barra de menu.jpg" width="350" height="200"></div>
+</ul>
+<h2><p>2. Caracteristicas de la apariencia:Extra en Linux Ubuntu Server</P></h2>
+Linux ubuntu server ha cambiado su apariencia y sus acaracvterísticas son:
+<ul>
+<li><font color="#000080">Escritorio de GNOME3.28:</li>
+<ul>
+<li><font color="#000000">Con 17.10 canonical ha hecho un cambio al escritorio GNOME como predeterminado con algunos ajustes.</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="Gnome.png" width="350" height="200"></div>
+</ul>
+<ul>
+<li><font color="#000080">Kernel 4.15:</li>
+</ul>
+<li><font color="#000000">Cada 6 meses,el equipo kernel de ubuntu tiene la tarea de elegir el kernel para usar en la próxima versión</li>
+<ul>
+<li><font color="#000080">Nuevo tema de escritorio e ícono:</li>
+</ul>
+<li><font color="#000000">Aunque Ubuntu ha sometido a una revisión con el escritorio de GNOME,su apariencia todavía se pone a las
+versiones anteriores.En base a los comentarios generales de la comunidad,el equipo busca incluir un nuevo tema
+de escritorio e ícono para la versión 18.04</li>
+<ul>
+<li><font color="#000080">Xorg por defecto:</li>
+</ul>
+<li><font color="#000000">Con vencimiento en abril del 2018, se instaló Xorg predeterminado</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="xorg.jpg" width="350" height="200"></div>
+<ul>
+<li><font color="#000080">Código y libre distribución:</li>
+</ul>
+<li><font color="#000000">Cualquiera puede desarrollar para Linu,mejorando sus funciones y caracteristicas</li>
+<ul>
+<li><font color="#000080">Interfaz:</li>
+</ul>
+<li><font color="#000000">Linux Ubuntu Server permite una gran personalizacion de su interfaz(por ejemplo el uso de escritorios como 6 nome o KDE)</li>
+<ul>
+<li><font color="#000080">Sistema operativo:</li>
+</ul>
+<li><font color="#000000">Es un sistema operativo seguro y se destaca sobre sus competidores por ser un sistema operativo que permite un mayor 
+control de dispotivos, lo cual proporciona un alto grado de seguridad</li>
+
+<h2><p>3.Describir caracteristicas de la administración de Red en Linux Ubuntu Server</P></h2>
+<ul>
+<li><font color="#000080">Ping:</li>
+</ul>
+<li><font color="#000000">Quizás la más básica e importante herramienta en lo que respecta a las redes. Ping se encarga de verificar la 
+conectividad de extremo a extremo, desde nuestro sistema hacia el que queremos conectar. Esta herramienta utiliza paquetes de eco ICMP, 
+que viajan de regreso a nuestro sistema, cuando el ping es exitoso. Dicho comando se puedo utilizar con direcciones IPv4 o IPv6</li>
+Sintaxis
+Para IPv4: ping < dirección IP o nombre DNS >
+Para IPv6: ping6 < dirección IP o nombre DNS >
+<ul>
+<li><font color="#000080">Traceroute:</li>
+</ul>
+<li><font color="#000000">Cuando ping comprueba la conectividad de extremo a extremo, la utilidad traceroute le dice a todas las IP del enrutador
+ por las que pasa, hasta llegar a su destino. Es una herramienta habitual para comprobar el punto de fallo en una conexión.</li>
+Sintaxis
+Traceroute <dirección IP o nombre DNS >
+<ul>
+<li><font color="#000080">Telnet:</li>
+</ul>
+<li><font color="#000000">Se trata de un protocolo de red, que nos permite acceder a otra máquina para manejarla de manera remota.
+También es el nombre del programa informático, que es nuestro caso, que implementa el cliente.</li>
+Sintaxis
+telnet < dirección IP o nombre DNS >
+telnet  < dirección IP o nombre DNS >  < puerto >
+<ul>
+<li><font color="#000080">Netstat:</li>
+</ul>
+<li><font color="#000000">Se trata de una utilidad para obtener estadísticas de red y se utiliza para solventar problemas de conexión y para 
+verificar estadísticas de interfaces, puertos, tablas de enrutamiento, etcétera.Es una herramienta que debemos conocer sí o sí, por su elevada 
+importancia en la administración de redes.</li>
+Sintaxis
+netstat -l , nos muestra una lista de todos los puertos que están escuchando
+netstat -a , muestra todos los puertos
+netstat -at, muestra todos los puertos, pero únicamente los TCP
+netstat -au, muestra todos los puertos, pero únicamente los UDP
+netstat -r , muestra la tabla con las rutas de red
+netstat -s, muestra un resumen de las estadísticas para cada protocolo
+netstat -i, nos muestra las estadísticas de los paquetes de transmisión y recepción, para cada interfaz
+<ul>
+<li><font color="#000080">Nmcli:</li>
+</ul>
+<li><font color="#000000">Es la herramienta principal de Network Manager, enfocada para administrar las conexiones de red y sus configuraciones. 
+Se puede utilizar para controlar Network Manager y modificar detalles de la configuración de los dispositivos.</li>
+Sintaxis
+nmcli device, lista todos los dispositivos del sistema
+nmcli device show <interfaz> , muestra la información de la interfaz de red especificada
+nmcli connection, revisa la conexión de los dispositivos
+nmcli connection down <interface>, apaga la interfaz especificada
+nmcli connection up <interface>, enciende la interfaz especificada
+<ul>
+<li><font color="#000080">Enrutamiento:</li>
+</ul>
+<li><font color="#000000">Se conoce con el nombre de enrutamiento (routing) el proceso que permite que los paquetes IP enviados por el host 
+origen lleguen al host destino de forma adecuada.
+En su viaje entre ambos host los paquetes han de atravesar un número indefinidos de host o dispositivos de red intermedios, debiendo existir 
+algún mecanismo capaz de direccionar los paquetes correctamente de uno a otro hasta alcanzar el destino final. Este mecanismo de ruteo es responsabilidad
+del protocolo IP, y lo hace de tal forma que los protocolos de las capas superiores, como TCP y UDP, no tienen constancia alguna del mismo, 
+limitándose a preocuparse de sus respectivas tareas.</li>
+<ul>
+<li><font color="#000080">Arp:</li>
+</ul>
+<li><font color="#000000">Significa protocolo de resolución de dirección, es similar a “IP neighbor”, se encarga de mapear la dirección IP de un sistema 
+en su dirección MAC correspondiente</li>
+<ul>
+<li><font color="#000080">TCPDUMP:</li>
+<gul>
+<li><font color="#000000">Se utiliza para capturar el tráfico de red de los paquetes que se transmiten o reciben. Un programa similar,
+pero con interfaz gráfica, es Wireshark</li>
+Sintaxis
+tcpdump – i <intefaz de red> , muestra paquetes en directo que pasan por la interfaz especificada. Los paquetes se pueden guardar en un archivo, agregando el parámetro “-w” y el nombre del fichero.
+tcpdump -i <interfaz de red> src <IP de origen> , captura paquetes desde una IP en particular
+tcpdump -i <interfaz de red> dst <IP de destino> , captura paquetes desde una IP de destino
+<ul>
+<li><font color="#000080">IPtables:</li>
+</ul>
+<li><font color="#000000">Es sin duda la herramienta principal para gestionar el cortafuegos de los servidores o equipos domésticos. Permite filtrar,
+bloquear o permitir cierto tráfico</li>
+<ul>
+<li><font color="#000080">Neslookup:</li>
+<gul>
+<li><font color="#000000">Esta herramienta se utiliza para obtener la asignación de direcciones IP de una sitio web o dominio. Esto es, si tenemos la 
+IP podemos obtener el nombre DNS o FQDN y a la inversa.</li>
+Sintaxis
+nslookup <nombre DNS o FQDN>, nos mostrará su IP asociada en el registro DNS
+nslookup < IP >, nos mostrará el nombre DNS asociado a la IP
+<ul>
+<li><font color="#000080">Lsof:</li>
+<li><font color="#000000">Se encarga de listar los puertos abiertos en el servidor.</li>
+<h2><p>4.Defina características del usuario Root en Linux Ubuntu Server</P></h2>
+<li><font color="#000000">El usuario root puede hacer muchas cosas que un usuario común no puede, tales como cambiar el dueño o permisos de archivos
+y enlazar a puertos de numeración pequeña. En Linux no es recomendable utilizar el usuario root para una simple sesión de uso habitual, ya que pone
+en riesgo el sistema al garantizar acceso privilegiado a cada programa en ejecución.
+Es preferible utilizar una cuenta de usuario normal y utilizar el comando su para acceder a los privilegios de root de ser necesario.</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="root.png" width="350" height="200"></div>
+<h2><p>5.Describa que importancia tienen los controladores privativos en Linux Ubuntu Server</P></h2>
+<li><font color="#000000">Los controladores adicionales o privativos son los que son proparcionados por el fabricante de un dispositivo,
+estos controladores no son de código abierto,por lo cual no pueden ser mantenidos ni garantizados por cononical,la empresa creadora de ubuntu
+Por lo tanto los controladores privativos son importantes para jugar videojuegos por ejemplo,ya que estos son desarollados por la empresa
+que diseño y fabrica el dispositivo y seguramente sepan sacarle un mejor rendimiento</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="privarivo.png" width="350" height="200"></div>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="videojuegos.jpg" width="350" height="200"></div>
+<h2><p>6.Explique gestor de actualizaciones en Linux Ubuntu Server</P></h2>
+<li><font color="#000000">Todas las aplicaciones suelen tener pequeños errores (bugs) que se suelen ir corrigiendo a medida 
+que salen nuevas versiones. En otras ocasiones aparecen parches (conocidos como service packs en Windows) que arreglan errores reportados por los usuarios. 
+Ubuntu integra un gestorde actualizaciones software que instala de forma automática las actualizaciones existentes para las aplicaciones instaladas en 
+el sistema.Para acceder al Gestor de actualizaciones deberás seleccionar la opción del menú principal Sistema->Administración->Gestor de actualizaciones</li>
+<li><font color"#DC143C">Al lanzarse el gestor de actualizaciones nos mostrará la última vez que se lanzó y podremos verificar si hay nuevas
+actualizaciones para instalar en el equipo si pulsamos el botón Comprobar, tal y como se muestra en la siguiente figura. 
+Desmarcaremos aquellas que no nos interesen(aunque no es aconsejable) y pulsaremos el botón Instalar actualizaciones para dar comienzo a dicho proceso.</li>
+<li><font color"#DC143C">A continuación el software de Gestión de actualizaciones se conectará vía Internet con los repositorios de software de Ubuntu.
+Se procederá entonces a descargar los paquetes que se actualizarán.</li>
+<li><font color"#DC143C">Después de la descarga de los paquetes comenzará el proceso de actualización. Este proceso, al igual que el anterior,
+podrá tardar varios minutos dependiendo de los paquetes a actualizar.</li>
+<li><font color"#DC143C">Una vez terminado el proceso de instalación de paquetes, se mostrará un mensaje indicándonos que es necesario reiniciar el sistema.</li>
+<li><font color"#DC143C">Una vez que se reinicie el sistema el proceso de actualización se habrá completado.
+Si se desea configurar desde qué repositorios de software se descargan las aplicaciones y las actualizaciones del software instalado tendremos que 
+seleccionar Sistema -> Administración -> Orígenes del software.</li>
+<li><font color"#DC143C">La configuración de los orígenes para el software instalable y las actualizaciones es una tarea privilegiada
+por lo que se requerirá que introduzca la contraseña de un usuario con privilegios administrativos </li>
+<h2><p>7.Describa características para la aplicación del gestor de paquetes synaptic</P></h2>
+<li><font color="#000000">Las aplicaciones de LliureX (Ubuntu) están organizadas en paquetes.Synaptic es una herramienta gráfica para la gestión de paquetes.
+Synaptic proporciona las siguientes características:</li>
+<li><font color="#000000">Instalar, eliminar, configurar, actualizar y descargar paquetes.
+Actualizar el sistema completo.
+Gestión del repositorio de paquetes.
+Búsqueda de la lista de paquetes por nombre, descripción y otras propiedades de los paquetes.
+Filtrado de la lista de paquetes conocidos, por estatus, sección o propiedades.
+Ordenar listados de paquetes por letra inicial, estatus...
+Visualizar toda la documentación en línea referida al paquete.</li>
+<li><font color="#000000">Es necesario tener permisos de administración (usuario sudo) para aplicar cambios sobre el sistema de paquetes.
+Para ejecutar Synaptic ir a Sistema > Administración > Synaptic, gestor de paquetes</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="Synaptic.png" width="350" height="200"></div>
+</ul>
+<h2><p>8.Determinar la imporetancia NAT(Network adress translation)en las redes de computo y ventajas de su uso</P></h2>
+<li><font color="#000000">es un mecanismo utilizado por routers IP para intercambiar paquetes entre dos redes que asignan mutuamente direcciones incompatibles.
+Consiste en convertir, en tiempo real, las direcciones utilizadas en los paquetes transportados. También es necesario editar los paquetes para permitir 
+la operación de protocolos que incluyen información de direcciones dentro de la conversación del protocolo.
+El tipo más simple de NAT proporciona una traducción una-a-una de las direcciones IP. La RFC 2663 se refiere a este tipo de NAT como NAT Básico,
+también se le conoce como NAT una-a-una. En este tipo de NAT únicamente las direcciones IP, las sumas de comprobación (Checksums) de la cabecer
+a IP y las sumas de comprobación de nivel superior, que se incluyen en la dirección IP, necesitan ser cambiadas
+Su uso más común es permitir utilizar direcciones privadas (definidas en el RFC 1918) para acceder a Internet. Existen rangos de direcciones privadas
+que pueden usarse libremente y en la cantidad que se quiera dentro de una red privada. Si el número de direcciones privadas es muy grande puede
+usarse solo una parte de direcciones públicas para salir a Internet desde la red privada
+Utilizar NAT tiene ciertas ventajas,por ejemplo:</li>
+<li><font color="#000000">Se tiene un gran ahorro de direcciónes de IPV4 en el que podemos conectar múltiples máquinas de una red a internet
+usando una única dirección IP pública</li>
+<li><font color="#000000">Se obtiene seguridad,ya que las maquinas conectadas a la red NAT no son visibles desde el exterior,por lo que un
+atacante externo no podía averiguar si una máquina está conectada o no a la red</li>
+<li><font color="#000000">Se obtiene seguridad,ya que las maquinas conectadas a la red NAT no son visibles desde el exterior,por lo que un
+atacante externo no podía averiguar si una máquina está conectada o no a la red</li>
+<li><font color="#000000">El mantenimiento de red,puso que solo sería necesario modificar la tabla de renvío de un router para desviar
+todo el tráfico hacíá otra mquina ,ientras se lleva a cabo tareas de mantenimiento</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="Nat.jpg" width="350" height="200"></div>
+</ul>
+<h2><h2><p>9.Describir los elementos de herramientas de red de Linux Ubuntu Server</P></h2>
+<ul>
+<li><font color="#000080">Ntopng:</li>
+</ul>
+<li><font color="#000000">Esta utilidad es la «next-generation» del clásico ntop, y provee una interfaz gráfica vía web para administrar
+la red! Puede geolocalizar hosts, obtener info del tráfico de red, mostrar la distribución de tráfico en la red local, y analizarlo.</li>
+<ul>
+<li><font color="#000080">Iftop:</li>
+</ul>
+<li><font color="#000000">Esta herramienta es similar a top, pero en vez de chequear principalmente el estado del procesador y los procesos,
+escucha el tráfico de red en una interfaz de red específica, y arma una tabla con el uso actual. Puede ser útil para responder preguntas como
+¿por qué mi conexión a Internet anda tan lenta!? </li>
+<ul>
+<li><font color="#000080">Bandwidthd:</li>
+</ul>
+<li><font color="#000000">Esta herramienta registra el uso de subredes tcp/ip y nos brinda una interfaz web que un gráfico en png. Hay una
+base de datos que permite buscar, filtrar y analizar reportes de múltiples sensores! </li>
+<ul>
+<li><font color="#000080">etherape:</li>
+</ul>
+<li><font color="#000000">Esta herramienta, de la que ya hemos comentado en detalle en Etherape: Monitoreando el tráfico de red gráficamente, 
+permite mostrar el tráfico de red gráficamente de una manera muy intuitiva y fácil de entender. Además, los resultados pueden ser refinados
+con filtros utilizando la sintaxis de pcap.</li>
+<ul>
+<li><font color="#000080">ethtool:</li>
+</ul>
+<li><font color="#000000">Esta herramienta es utilizada para mostrar y modificar algunos parámetros de los controladores de interfaces de red.
+Puede también ser usada para diagnosticar dispositivos Ethernet y obtener mas estadísticas de los mismos.</li>
+<ul>
+<li><font color="#000080">Nethogs:</li>
+</ul>
+<li><font color="#000000">Nethogs obtiene el tráfico de red por protocolo y por subnet! Así con esa información puede agrupar el tráfico
+por proceso,de modo que si hay alguna anomalía en la red, nethogs puede detectarla y obtener el proceso que la causa.</li>
+<ul>
+<li><font color="#000080">Iftrap:</li>
+</ul>
+<li><font color="#000000">Esta excelente herramienta de interfaz ncurses permite obtener una gran variedad de métricas tales como la 
+cantidad de conexiones tcp, los paquetesenviados y recibidos por cada una, la velocidad de tráfico saliente o entrante por conexión y
+en total, y demás indicadores de actividad.</li>
+<ul>
+<li><font color="#000080">Ngrep:</li>
+</ul>
+<li><font color="#000000">Esta interesante utilidad es un clon del clásico comando grep para filtrar, pero en este caso, los
+datos de entrada los obtiene directamente desde las interfaces de red o archivos pcap, y permite filtrar utilizando expresiones 
+regulares o hexadecimales para obtener ciertos y determinados paquetes.</li>
+<ul>
+<li><font color="#000080">Mrtg:</li>
+</ul>
+<li><font color="#000000">MRTG, el excelente monitor de tráfico de red gráfico, originalmente desarrollado para monitorear el
+tráfico de red en un router, pero hoy ampliado para abarcar otros tópicos en el ambiente de las redes. Típicamente colecciona datos
+cada cinco minutos y genera una página html para visualizar los resultados. Permite enviar, algo muy importante para un sysadmin, alertas
+por correo electrónico, si fuera necesario.</li>
+<ul>
+<li><font color="#000080">Bmon:</li>
+</ul>
+<li><font color="#000000">GBmon monitorea y ayuda a debuggear problemas de red. Captura estadísticas relacionadas con las redes, y
+las presenta de una manera amigable. Además podemos interactuar con su interfaz a través de una interfaz curses o por medio de scripting.</li>
+<ul>
+<li><font color="#000080">Tracepath:</li>
+</ul>
+<li><font color="#000000">Esta clásica utilidad de línea de comandos nos permite visualizar la ruta que toman los paquetes para llegar a
+determinado destino, salto por salto, haciendo uso interno de protocolos como ICMP. Tracepath es una aplicación similar a traceroute, con
+la misma funcionalidad, pero que no requiere ejecutarse con privilegios de root.</li>
+<ul>
+<li><font color="#000080">Ipstate:</li>
+</ul>
+<li><font color="#000000">IPState es una interesante utilidad que nos permite ver el estado almacenado en la tabla de estados de iptables,
+en tiempo real,con un formato similar al de top/htop. La salida puede ser ordenada por cualquier campo, y en forma reversa. Los usuarios
+pueden elegir tener la salida instantánea, o verlo en tiempo real.</li>
+<ul>
+<li><font color="#000080">Darkstat:</li>
+<ul>
+<li><font color="#000000">Es una muy buena herramienta para capturar tráfico en segundo plano, en uno o todas las interfaces de red, utilizando
+las bibliotecas pcap, y luego acceder a los gráficos estadísticos vía web accediendo a un puerto configurable desde nuestro navegador.</li>
+<ul>
+<li><font color="#000080">Vnstat:</li>
+</ul>
+<li><font color="#000000">Esta es otra herramienta para monitorear tráfico de red, que utiliza estadísticas provistas porel kernel que aseguran un
+uso muy reducido de los recursos del sistema. La información recolectada es persistente a reinicios del sistema, y se pueden configurar colores
+y temas en la interfaz.</li>
+<ul>
+<li><font color="#000080">If:</li>
+</ul>
+<li><font color="#000000">Este comando es parte del paquete iproute2, un conjunto de herramientas que reemplaza al viejo net-tools (ese que incluye
+a ifconfig, route, netstat, iptunnel, etc).
+ip viene a reemplazar a casi todos los comandos de net-tools, y mediante modificadores permite resolver cualquier tipo de configuración en un entorno
+ Linux moderno.</li>
+<ul>
+<li><font color="#000080">SS:</li>
+</ul>
+<li><font color="#000000">ss viene a reemplazar al viejo y querido (y obsoleto) netstat, para monitorear el estado de las conexiones, servicios activos,
+puertos, etc… toda una navaja suiza de la administración de redes en sistemas Linux.</li>
+<ul>
+<li><font color="#000080">Nmap:</li>
+</ul>
+<li><font color="#000000">Lejos una de las mejores herramientas de pentesting y discovery de redes! Permite escanear puertos en un servidor, o equipo
+de escritorio, detectar versiones de software y sistemas operativos, evadir firewalls y detectores de intrusos… excelente aplicativo, digno de un artículo
+para el solo.</li>
+<ul>
+<li><font color="#000080">Wireshark:</li>
+</ul>
+<li><font color="#000000">Wireshark podría decirse que es el sniffer de tráfico de interfaz gráfica más conocido de, diría, cualquier entorno!
+Este capturador de tráfico utiliza pcap para realizar su cometido, y nos permite analizar cabeceras y contenido de tramas de red.</li>
+<ul>
+<li><font color="#000080">Tcpdump:</li>
+</ul>
+<li><font color="#000000">Sirve para captura de tráfico de red por línea de comandos. Como casi cualquier sniffer en Linux, utiliza las bibliotecas pcap
+al igual que wireshark, y nos da un gran abanico deposibilidades y opciones de captura y filtrado de paquetes, conexiones, puertos, y demás.</li>
+<h2><p>10. Describir elementos de la barra de menú en Linux U buntu server</P></h2>
+<li><font color="#000000">1.Entramos a http://host:631, lo cual nos lleva a la página principal de cups y desde ahí podemos configurar y 
+manejar todo lo relacionado con la impresión porque se podra´n manejar impresoras  que estén en la red en la que este nuestro sisstema</li>
+<li><font color="#000000">2.Vamos a instalar una impresora,por lo que nos dirigimos a "añadir una impresora",nos aparecerá una pantalla
+en la que se nos pide usuario y contraseña</li>
+<li><font color="#000000">3.Después nos pedirá el tipo de conexión que tiene la impresora o va a tener,si esta en red o no.Por cierto 
+Hplpip es conexión usb,las 2 anteriores son sistemas de conexión más antiguas que usb.</li>
+<li><font color="#000000">4.Pulsamos siguiente y nos pedirá la dirección física con ejemplos de como debe ser la dirección,Una vez
+introducida pulsamos siguiente y aparecerá una pantalla</li>
+<li><font color="#000000">5.Aparecerá una pantalla para introducir los drivers de la impresora.Es recomendable elegir la opción interior
+e indicarle al sistema donde esta el driver.Al pulsar siguiente, tenemos los ajustes de la impresora que podemos modificar anuestro antojo, 
+ya que la impresora ya esta instalada y solo nos pide los ajustes que tenga la impresora por defecto pero que npo son inmovibles</li>
+<h2><p>11.Explicar las fichas,procesos,recursos y sistemas de archivos del monitor del sistema Linux ubuntu server</P></h2>
+<ul>
+<li><font color="#C71585">Los principales objetivos de la monitorización son:</li>
+</ul>
+<li><font color="#000000">Asegurar que el nivel de disponibilidad requerido esté proporcionado.</li>
+<li><font color="#000000">Permitir la supervisión y análisis de la disponibilidad para asegurar que los niveles de servicios se están cumpliendo.</li>
+<li><font color="#000000">Supervisar continuamente la disponibilidad de los servicios y en caso de que se produzca un fallo alertar a los administradores
+para iniciar los procedimientos oportunos.</li>
+<li><font color="#000000">Minimizar el tiempo de detección de los incidentes para garantizar la disponibilidad de los recursos y servicios.</li>
+<ul>
+<li><font color="#C71585">Segun el tipo de información que presentan,los comandos se pueden clasificar en:</li>
+</ul>
+<ul>
+<li><font color="#7B68EE">Procesos:</li>
+</ul>
+<li><font color="#000000">Muestra información sobre los procesos que se están ejecutando en el sistema.</li>
+<ul>
+<li><font color="#7B68EE">Almacenamiento:</li>
+</ul>
+<li><font color="#000000">Proporcionan información sobre la entrada y salida al subsistema de almacenamiento</li>
+<ul>
+<li><font color="#7B68EE">Memoria:</li>
+</ul>
+<li><font color="#000000">Proporcionan información sobre el espacio de memoria real y swap.</li>
+<ul>
+<li><font color="#7B68EE">Red:</li>
+</ul>
+<li><font color="#000000">Facilitan estadísticas de uso de las interfaces de red.</li>
+<ul>
+<li><font color="#7B68EE">Polivalentes:</li>
+</ul>
+<li><font color="#000000">Muestran información sobre distintos subsistemas del equipo</li>
+<ul>
+<li><font color="#B22222">Herramientas y comandos más utilizados:</li>
+</ul>
+
+<li><font color="#000000">Herramientas polivalentes
+<li>Herramientas de análisis de procesos</li>
+<li>Monitorización del sistema de ficheros</li>
+<li>Herramientas de análisis de red</li>
+<li>Herramientas de análisis de memoria</li>
+<li>Monitor del sistema (xWindows)</li>
+<li>Sistema de archivos /proc</li>
+<li>Archivos de registro (syslog)</li>
+<li>Ver el hardware del sistema</li>
+<h2><p>12.Definir la importancia del origen del software en Linux</P></h2>
+<li>Es importante para conocer la filisofía de las 4 libertadesaquí radicael núcleo de lo que hoy 
+conocemos como GNU/Linux, muchos lenguajes de programación, programas, juegos, motores de videojuegos y demás.</li>
+<ul>
+<li><font color="#C71585">Las 4 libertades del soft son:</li>
+</ul>
+<li><font color="#000000">La libertad de ejecutar el programa como se desee, con cualquier propósito.</li>
+<li>La libertad de estudiar cómo funciona el programa, y cambiarlo para que haga lo que usted quiera.
+El acceso al código fuente es una condición necesaria para ello.</li>
+<li>La libertad de redistribuir copias para ayudar a otros.</li>
+<li>La libertad de distribuir copias de sus versiones modificadas a terceros. Esto le permite ofrecer a
+ toda la comunidad la oportunidad de beneficiarse de las modificaciones. El acceso al código fuente es una condición necesaria para ello.</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="soft.jpg" width="350" height="200"></div>
+</ul>
+<h2><p>13.Marcar como podemos visualizar los servicios o demonios que se ejecutan en Linux Ubuntu server</P></h2>
+<ul>
+<li><font color="#C71585">Para poder visualizar los servicios o demonios en Linux Ubuntu Server debemos:</li>
+</ul>
+<ul>
+<li><font color="#B22222">Activar y controlar el demonio:La orden Systenctl.</li>
+</ul>
+<li><font color="#000000">Ya que tenemos el demonio definido y configurado en/etc/systemd/system/un demonio.service.Ahora se debe incluirlo en la secuencia
+de arranquey para activarlo:La orden systemetl permite controlar los servicios del sistema:Incluir un nuevo servicio en la secuencia
+de arranque con la opción enable,iniciando con la opción start,parando con stop</li>
+<ul>
+<li><font color="#B22222">Crear un proceso hijo</li>
+</ul>
+<li><font color="#000000">El primer paso para que un proceso se convierta en un demonio es crear un proceso hijo y a continuación terminar el proceso
+padre:Al finalizar el proceso padre el proceso hijo es adoptado por init. El resultado es que la shell piensa que el comando terminó con éxito, permitiendo
+que el proceso hijo se ejecute de manera independiente en segundo plano.
+init es el demonio antepasado de todos los procesos del sistema. Es el primer proceso que se inicia durante el arranque del sistema y su función principal
+es lanzar el resto de demonios necesarios para el funcionamiento del sistema.</li>
+<ul>
+<li><font color="#B22222">Cambiar Umask:</li>
+</ul>
+<li><font color="#000000">Todos los procesos tiene una máscara que indica que permisos no deben establecerse al crear nuevos archivos.Así cuando se
+ utilizan llamadas al sistema como open()los permisos especificados se comparan con esta máscara, desactivando de manera efectiva los que en ella
+se indiquen.La máscara —denominada umask()— es heredada de padres a hijos por los procesos, por lo que su valor por defecto será el mismo que el que
+ tenía configurada la shell que lanzó el demonio. Esto significa que el demonio no sabe que permisos acabarán tenido los archivos que intente crear.
+ Para evitarlo simplemente podemos autorizar todos los permisos:o establecer específicamente para umask() otro valor más seguro según nuestra conveniencia.
+Incluso algunos desarrolladores permiten quelos administradores del sistema especifiquen la máscara deseada a través del archivo de configuración
+del demonio.</li>
+<ul>
+<li><font color="#B22222">Abrir conexión con el registro de eventos:</li>
+</ul>
+<li><font color="#000000">Puesto que un demonio se ejecuta en segundo plano no debe estar conectado a ninguna terminal. Sin embargo esto plantea
+la cuestión de cómo indicar condiciones de error, advertencias u otro tipo de sucesos del programa.Algunos demonios almacenan estos mensajes en
+archivos específicos o en su propia base de datos de sucesos.</li>
+<ul>
+<li><font color="#B22222">Registro de eventos en aplicaciones Qt:</li>
+</ul>
+<li><font color="#000000">Cuando se desarrolla con Qt puede ser interesante echar un vistazo a las funcionalidades de la librería LibQxt. Este proyecto
+proporciona un conjunto de clases que añaden funcionalidades multiplataforma que no están disponibles en el framework Qt.Entre dichas funcionalidades
+adicionales está la clase QxtLogger, que facilita que el demonio registre los eventos en sus propios archivos de sucesos QxtLogger —por ejemplo
+ /var/log/midemonio/info.log, /var/log/midemonio/debug.log, etc.</li>
+<ul>
+<li><font color="#B22222">Crear una nueva sesión:</li>
+</ul>
+<li><font color="#000000">Cada proceso es miembro de un grupo y estos a su vez se reúnen en sesiones. En cada una de estas hay un proceso que hace las
+veces de líder, de tal forma que si muere todos los procesos de la sesión reciben una señal SIGHUP. La idea es que el líder muere cuando se quiere dar
+la sesión por terminada, por lo que mediante SIGHUP se notifica al resto de procesos esta circunstancia para que puedan terminar ordenadamente.
+Obviamente no estamos interesados en que el demonio termine cuando la sesión desde la que fue creado finalice, por lo que necesitamos crear nuestra
+propia sesión de la que dicho demonio será el líder</li>
+<ul>
+<li><font color="#B22222">Cambiar el directorio de trabajo:</li>
+</ul>
+<li><font color="#000000">Hasta el momento el directorio de trabajo del proceso es el mismo que el de la shell en el momento en el que se ejecutó el comando.
+Este podría estar dentro de un punto de montaje cualquiera del sistema,por lo que no tenemos garantías de que vaya a seguir estando disponible durante la
+ejecución del proceso.</li>
+<ul>
+<li><font color="#B22222">Reabir los descriptores estándar:</li>
+</ul>
+<li><font color="#000000">Como ya hemos comentado, un demonio no interactúa directamente con los usuarios, por lo que no necesita usar la E/S estándar,
+así que podemos cerrar sus descriptores:
+Sin embargo esto puede no ser lo más conveniente porque los siguientes archivos que se abran —archivos de registro, sockets, etc— reusarán esos mismos
+descriptores, lo que puede ser un problema si se utiliza alguna librería que pueda intentar hacer uso
+de la E/S estándar. En su lugar puede ser preferible mantenerlos abiertos pero conectados al archivo /dev/null:</li>
+<ul>
+<li><font color="#B22222">Usar daemon():</li>
+</ul>
+<li><font color="#000000">Algunos de los pasos comentados anteriormente se pueden hacer de una sola vez mediante la función daemon():</li>
+<li><font color="#000000">Hace el fork() y termina el proceso padre.</li>
+<li><font color="#000000">Opcionalmente puede cambiar el directorio de trabajo pero sólo al directorio raíz.</li>
+<li><font color="#000000">No ajusta umask().</li>
+<li><font color="#000000">Opcionalmente reabre los descriptores de archivo estándar a /dev/null.</li>
+<ul>
+<li><font color="#B22222">Cambiar la personalidad del proceso:</li>
+</ul>
+<li><font color="#000000">Los demonios son generalmente lanzados por el usuario root, lo que les da acceso a todos los recursos del sistema.
+Esto puede ser muy peligroso si un atacante se saltara las medidas de seguridad incorporadas en el programa y fuera capaz de hacer que
+ejecutara código arbitrario.</li>
+<ul>
+<li><font color="#B22222">Señales:</li>
+</ul>
+<li><font color="#000000">Una vez el demonio está en ejecución las señales ser convierten en un mecanismo muy potente para comunicarnos con él</li>
+<li><font color="#000000">Debe atender la señal SIGTERM para terminar en condiciones de seguridad.</li>
+<li><font color="#000000">Es muy común que intercepte la señal SIGHUP ya que así se le suele indicar que recargue los archivos de
+configuración sin tener que reiniciarlo.</li>
+<ul>
+<li><font color="#B22222">Arranque del servicio:</li>
+</ul>
+<li><font color="#000000">Los demonios init de muchos sistemas operativos operan en base a niveles de ejecución.</li>
+<li><font color="#000000">Entrar en modo monousuario (generalmente el 1 o S).</li>
+<li><font color="#000000">Entrar en modo multiusuario sin soporte de red.</li>
+<li><font color="#000000">Entrar en modo multiusuario con soporte de red.</li>
+<li><font color="#000000">Apagar el sistema (generalmente el 0).</li>
+<li><font color="#000000">Reiniciar el sistema (generalmente el 6).</li>
+<ul>
+<li><font color="#B22222">Script de Inicio:</li>
+</ul>
+<li><font color="#000000">Para iniciar o detener los demonios según el nivel de ejecución, estos suelen ir
+acompañados de un script de inicio que por lo general se almacena en el directorio /etc/init.d.</li>
+<ul>
+<li><font color="#B22222">Automatización del inicio y parada del servicio:</li>
+</ul>
+<li><font color="#000000">Al sistema hay que indicarle en qué niveles de ejecución se debe iniciar el servicio y en cuales
+ debe ser detenido. De esta forma automatizamos el inicio y parada del demonio durante el arranque del sistema.
+Para hacerlo lo más sencillo es utilizar el comando update-rc.d</li>
+<ul>
+<li><font color="#B22222">Opciones de líneas de comandos:</li>
+</ul>
+<li><font color="#000000">Los demonios, igual que cualquier otro programa, pueden recibir opciones de línea de comandos para
+configurarlos o alterar su comportamiento. Por ejemplo es muy común que ofrezcan opciones para sobrescribir los parámetros
+indicados en el archivo de configuración.</li>
+<h2><p>14.Explica la función del visor de sucesos en Linux Ubuntu Server</P></h2>
+<li><font color="#000000">El visor de sucesos tiene la función de comprobar todo tipo de información de error con el visor,
+es decir,ahí se lleva el registro de algunos sistemas y archivos borrados y muy viejos</li>
+</ul>
+</ul>
+<ul>
+<div align="absmiddle"><img src="Visor.png" width="350" height="200"></div>
+</ul>
+<h2><p>15.Describir como se gestiona Usuarios y grupos en Linux Ubuntu Server</P></h2>
+<li><font color="#000000">El objetivo principal de la gestión de usuarios y grupos en Linux, es permitir que múltiples usuarios hagan
+ uso del sistema,pero de una forma ordenada y segura. De tal manera que ninguna de las tareas que se realicen por cualquier usuario,
+pueda poner en riesgo todo el sistema.</li>
+<ul>
+<li><font color="#B22222">Cuentas de usuario:</li>
+</ul>
+<li><font color="#000000">Como les mencione anteriormente, para poder usar el sistema operativo Linux, es necesario tener una cuenta de usuario.
+Dicha cuenta se constituya por un nombre de usuario (login) y de una contraseña (password). Las cuentas de usuario son creadas por el administrador
+del sistema, que en Linux es conocido como Usuario root. Cada usuario, debe pertenecer obligatoriamente a algún grupo de usuario. Adicionalmente,
+al momento de ingresar al sistema, el usuario deberá identificarse con su cuenta de usuario y en caso de equivocarse, el sistema
+ le denegara el acceso.</li>
+<ul>
+<li><font color="#B22222">Grupos de usuario:</li>
+</ul>
+<li><font color="#000000">Para permitir una administración flexible de los permisos de los usuarios, Linux permite estructurar los usuarios
+a través de grupos y los permisos pueden ser asignados a un grupo. Por ejemplo, tenemos una institución educativa, el grupo de profesores tiene
+acceso a ciertos archivos, al momento de añadir un nuevo profesor en el sistema, solo tenemos que asignarle a su cuenta de usuario el grupo
+profesor..</li>
+<ul>
+<li><font color="#C71585">Comandos de gestión de usuarios y grupos en Linux:</li>
+</ul>
+<ul>
+<li><font color="#B22222">Creación de usuarios:</li>
+</ul>
+<li><font color="#000000">Para añadir un usuario, indicando sus parámetros de información utilizamos en la consola el comando useradd.
+Su sintaxis es:[php]useradd [opciones] nombre-usuario[/php]</li>
+<li><font color="#000000">g: Grupo principal que sera asignado al usuario</li>
+<li><font color="#000000">d: Para asignar carpeta home del usuario. Normalmente es /home/nombre-usuario</li>
+<li><font color="#000000">m: Crear carpeta home en caso de no existir</li>
+<li><font color="#000000">s: Intérprete de comandos (shell) del usuario. Suele ser /bin/bash</li>
+<ul>
+<li><font color="#B22222">Creación de grupos:</li>
+</ul>
+<li><font color="#000000">En este caso, tenemos el comando groupadd, tan solo debemos indicar el nombre del grupo como parámetro.
+ Por ejemplo, si quisiéramos añadir un grupo llamado “estudiantes”, la sentencia seria:
+[php]sudo groupadd estudiantes[/php]</li>
+<ul>
+<li><font color="#B22222">Modificación de grupos:</li>
+</ul>
+<li><font color="#000000">Por supuesto, los grupos también pueden ser modificados al igual que hacemos con los usuarios. Para ello, 
+usamos el comando groupmod.En el caso de los grupos podemos editar su nombre o su gid.
+La sintaxis para el comando es: sudo groupmod [-g nuevo-gid] [-n nuevo-nombre] nombre-grupo</li>
+<ul>
+<li><font color="#B22222">Eliminación de grupos:</li>
+</ul>
+<li><font color="#000000">Lo hacemos con el comando groupdel seguido del nombre del grupo, por ejemplo:
+[php]sudo groupdel profesores[/php]
+Se eliminara el grupo sólo en caso de que no tenga usuarios con el grupo asignado como primario. 
+Si existiera algún usuario con esta condición, el grupo no se eliminara.</li>
+<ul>
+<li><font color="#B22222">Añadir usuarios a un grupo:</li>
+</ul>
+<li><font color="#000000">pera ello empleamos el comando adduser y a continuación el nombre del usuario y el nombre del grupo.
+Por ejemplo, para añadir Luis al grupo profesores usamos:
+[php] sudo adduser luis profesores[/php]</li>
+<ul>
+<li><font color="#B22222">Quitar usuarios de un grupo:</li>
+</ul>
+<li><font color="#000000">Y finalmente, si queremos eliminar un usuario de un grupo, utilizamos el comando deluser acompañado del
+nombre del usuario y del grupo. Por ejemplo, si queremos quitar a “luis” del grupo “profesores”:
+[php]sudo deluser luis profesores[/php]</li>
+<ul>
+</ul>
+</p>
+</ol>
+</ul>
+</p>
+<font color="#B40486">
+<p align="center">Alumna:Yesenia Cornejo Noval</p>
+<p align="center">Grado:5° Grupo:"J"
+</font>
+</p>
+</body>
+</head>
+</html>
